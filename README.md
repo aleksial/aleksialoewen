@@ -1,4 +1,4 @@
-# aleksialoewen
+# Aleksia Loewen
 Personal Website
 
 ## Future deployments
