@@ -1,5 +1,5 @@
 # Aleksia Loewen
-Personal Website
+Personal Website: https://aleksial.github.io/aleksialoewen/
 
 ## Future deployments
 - Add images
