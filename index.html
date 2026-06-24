@@ -3,127 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aleksia Loewen | Frontend Co-op Portfolio</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #8737AB;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #2c3e50;
-    }
-    .project {
-      background-color: #C890E0;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      background-color: #8737AB;
-      color: white;
-      padding: 2rem;
-    }
-    a {
-      color: #903BB3;
-      text-decoration: none;
-    }
-  </style>
+  <title>Aleksia Loewen | Home </title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Aleksia Loewen</h1>
     <p>Software Engineering Student | UVic</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+
   </header>
 
   <section>
     <h2>About Me</h2>
-    <p>Hello! My name is Aleksia, and I'm a fourth-year Software Engineering student at the University of Victoria</p>
+    <p>Hello! My name is Aleksia, and I'm a fourth-year Software Engineering student at the University of Victoria. I love <a class="page-link" href="https://youtu.be/9C_HReR_McQ?si=w5dvq6YRhTT22JJR">being creative</a> and thinking outside the box as well as problem solving.</p>
     <p>Welcome to my personal website!</p>
-  </section>
-
-  <section>
-    <h2>Work Experience</h2>
-
-    <div class="project">
-      <h3>IT Computer, Data and Analytics (January 2026 – Present)</h3>
-        <ul>
-          <li>Attend data product requirements and design workshops.</li>
-          <li>Develop test cases and perform Quality Assurance testing of reports and dashboards.</li>
-          <li>Document as-built technical documentation for reports and dashboards.</li>
-          <li>Develop training content and conduct user-training sessions.</li>
-          <li>Contribute to the improvement of data and analytics products delivery processes.</li>
-          <li>Develop dashboards for internal use if opportunity arises.</li>
-        </ul>
-    </div>
-
-    <div class="project">
-      <h3>Computer Help Desk Analyst (January 2025 – December 2025)</h3>
-        <ul>
-          <li>Reply to emails, calls and in-person visits regarding clients’ issues accessing the University of Victoria’s online services.</li>
-          <li>Manage accounts and help with a variety of different technical concerns.</li>
-        </ul>
-    </div>
-
-    <div class="project">
-      <h3>IT Support Technician (May 2025 – August 2025)</h3>
-      <ul>
-          <li>Troubleshot and resolved clients' technical issues. </li>
-          <li>Maintained computers, monitors, docking stations and other computer paraphernalia. </li>
-          <li>Kept a thorough inventory of the devices on the base.</li>
-          <li>Replied to emails, calls and in-person visits regarding the client’s issues accessing the Department of National Defence's services. </li>
-        </ul>
-    </div>
-
-    <div class="project">
-      <h3>Club Leader(September 2024 – May 2025)</h3>
-      <ul>
-        <li>Co-develop lesson plans and lead coding sessions for girls (Grades 6-9). </li>
-        <li>Engage students with hands-on learning activities to enhance coding skills.</li>
-      </ul>
-    </div>
-
-    <div class="project">
-      <h3>Cast Member (December 2021 – August 2022)</h3>
-      <ul>
-        <li>Delivered excellent customer service in a dynamic, high-paced environment. </li>
-        <li>Ensured cleanliness and adhered to safety protocols and company policies. </li>
-      </ul>
-    </div>
-
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Languages: Java, C, C++, Python, SQL</li>
-      <li>Frontend: Figma, GitHub, Visual Design</li>
-      <li>Tools: JUnit, LaTeX, Excel, MS Teams</li>
-      <li>Soft Skills: Communication, Teamwork, Organization</li>
-      <li>Languages: Fluent in English and French</li>
-    </ul>
-  </section>
-
-  <section>
+  
     <h2>Hobbies</h2>
-    <p>Reading, Journaling, Mathematics, Cinema, Hiking, Coding, Swimming, Lego Building, Painting</p>
+    <div class="text-box">
+      <p class="front">Reading</p>
+      <p class="back" hidden>Reading...</p>
+    </div>
+
+    <script>
+      const card = document.querySelector(".text-box");
+      
+      card.addEventListener("click", () => {
+          const front = card.querySelector(".front");
+          const back = card.querySelector(".back");
+      
+          front.hidden = !front.hidden;
+          back.hidden = !back.hidden;
+      });
+      </script>
+
+      <br>
+      <div class="journal">
+        <p class="front">Journaling</p>
+        <p class="back" hidden>testing...</p>
+      </div>
+
+      <br>
+      <div class="math">
+        <p class="front">Math</p>
+        <p class="back" hidden>testing...</p>
+      </div>
+
+      <br>
+      <div class="cinema">
+        <p class="front">Cinema</p>
+        <p class="back" hidden>testing...</p>
+      </div>
+
+    <p>Hiking, Coding, Swimming, Lego Building, Painting</p>
   </section>
 
 </body>
 </html>
+
+<script>src="script.js" </script> <!-- need to figure out how to make the flip a script -->
 
 <footer>
     <p>Thank you for visiting! I hope you had fun!</p>
